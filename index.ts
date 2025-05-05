@@ -5,7 +5,6 @@ import { config } from "./config";
 import typeDefs from "./graphql/typedefs/typedefs";
 import resolvers from "./graphql/resolvers/resolvers";
 import { ApolloServer } from "apollo-server-express";
-import { errors } from "undici-types";
 
 dotenv.config({ path: ".env" });
 
@@ -40,9 +39,8 @@ const startServer = async () => {
     app.listen(port, () =>
       console.log(`⚡️ Server ready to connect on port ${port}!`)
     );
-  } catch {
-    console.error("❌ Failed to start server", errors)
-    process.exit(1)
+  } catch (error) {
+    console.error("❌ Failed to start server", error);
   }
 };
 
