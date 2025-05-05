@@ -1,0 +1,39 @@
+{
+  "name": "yelp-for-btk",
+  "version": "1.0.0",
+  "description": "Yelp-style app with a nice twist",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.10.1",
+    "graphql-tools": "^9.0.18",
+    "mongoose": "^8.14.1",
+    "nodemon": "^3.1.10",
+    "tr46": "^0.0.3",
+    "undici-types": "^6.21.0",
+    "webidl-conversions": "^3.0.1",
+    "whatwg-url": "^5.0.0",
+    "ws": "^8.18.1"
+  },
+  "scripts": {
+    "start": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IffatAhmedk/yelp-for-btk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IffatAhmedk/yelp-for-btk/issues"
+  },
+  "homepage": "https://github.com/IffatAhmedk/yelp-for-btk#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
